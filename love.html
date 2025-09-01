@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Love for You</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+    }
+    .heart {
+      position: relative;
+      width: 100px;
+      height: 90px;
+      margin: 50px auto;
+    }
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 90px;
+      background: red;
+      border-radius: 50%;
+    }
+    .heart::before {
+      left: -50px;
+    }
+    .heart::after {
+      left: 50px;
+    }
+    .heart {
+      transform: rotate(-45deg);
+      background: red;
+    }
+    .message {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="heart"></div>
+  <div class="message">Terima kasih sudah hadir di hidupku ❤️</div>
+</body>
+</html>
